@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +11,7 @@
             padding: 0;
             box-sizing: border-box;
         }
+
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
@@ -17,64 +19,80 @@
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             min-height: 100vh;
         }
+
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
         }
+
         header {
             text-align: center;
             color: white;
             padding: 60px 0;
-            background: rgba(0,0,0,0.2);
+            background: rgba(0, 0, 0, 0.2);
             border-radius: 20px;
             margin-bottom: 40px;
         }
+
         h1 {
             font-size: 3em;
             margin-bottom: 10px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
         }
+
         .subtitle {
             font-size: 1.3em;
             opacity: 0.9;
         }
+
         nav {
             text-align: center;
             margin-bottom: 40px;
         }
+
         nav a {
             color: white;
             text-decoration: none;
             padding: 10px 25px;
             margin: 0 10px;
-            background: rgba(255,255,255,0.2);
+            background: rgba(255, 255, 255, 0.2);
             border-radius: 25px;
             transition: all 0.3s ease;
             font-weight: 500;
         }
+
         nav a:hover {
-            background: rgba(255,255,255,0.3);
+            background: rgba(255, 255, 255, 0.3);
             transform: translateY(-2px);
         }
+
         section {
             background: white;
             margin-bottom: 30px;
             padding: 40px;
             border-radius: 20px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
             transform: translateY(20px);
             opacity: 0;
             animation: slideUp 0.6s ease forwards;
         }
-        section:nth-child(odd) { animation-delay: 0.1s; }
-        section:nth-child(even) { animation-delay: 0.2s; }
+
+        section:nth-child(odd) {
+            animation-delay: 0.1s;
+        }
+
+        section:nth-child(even) {
+            animation-delay: 0.2s;
+        }
+
         @keyframes slideUp {
             to {
                 transform: translateY(0);
                 opacity: 1;
             }
         }
+
         h2 {
             color: #4a5568;
             font-size: 2.2em;
@@ -82,6 +100,7 @@
             text-align: center;
             position: relative;
         }
+
         h2::after {
             content: '';
             width: 60px;
@@ -93,13 +112,17 @@
             transform: translateX(-50%);
             border-radius: 2px;
         }
-        .skills-grid, .projects-grid {
+
+        .skills-grid,
+        .projects-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 25px;
             margin-top: 30px;
         }
-        .skill-item, .project-item {
+
+        .skill-item,
+        .project-item {
             background: #f8fafc;
             padding: 30px;
             border-radius: 15px;
@@ -107,11 +130,14 @@
             transition: all 0.3s ease;
             border: 2px solid transparent;
         }
-        .skill-item:hover, .project-item:hover {
+
+        .skill-item:hover,
+        .project-item:hover {
             transform: translateY(-5px);
-            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
             border-color: #667eea;
         }
+
         .skill-icon {
             font-size: 3em;
             margin-bottom: 15px;
@@ -120,6 +146,7 @@
             -webkit-text-fill-color: transparent;
             background-clip: text;
         }
+
         .project-item img {
             width: 100%;
             height: 200px;
@@ -127,6 +154,7 @@
             border-radius: 10px;
             margin-bottom: 15px;
         }
+
         .btn {
             display: inline-block;
             background: linear-gradient(135deg, #667eea, #764ba2);
@@ -138,15 +166,18 @@
             transition: all 0.3s ease;
             font-weight: 500;
         }
+
         .btn:hover {
             transform: translateY(-2px);
             box-shadow: 0 10px 20px rgba(102, 126, 234, 0.4);
         }
+
         .experience-item {
             margin-bottom: 30px;
             padding-left: 30px;
             position: relative;
         }
+
         .experience-item::before {
             content: '';
             width: 2px;
@@ -156,19 +187,35 @@
             left: 0;
             top: 0;
         }
+
         .experience-date {
             color: #667eea;
             font-weight: 600;
             margin-bottom: 5px;
         }
+
         @media (max-width: 768px) {
-            h1 { font-size: 2.2em; }
-            section { padding: 25px 20px; }
-            .skills-grid, .projects-grid { grid-template-columns: 1fr; }
-            nav a { display: block; margin: 5px 0; }
+            h1 {
+                font-size: 2.2em;
+            }
+
+            section {
+                padding: 25px 20px;
+            }
+
+            .skills-grid,
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+
+            nav a {
+                display: block;
+                margin: 5px 0;
+            }
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <header>
@@ -186,15 +233,18 @@
         <section id="about">
             <h2>About Me</h2>
             <p style="text-align: center; font-size: 1.1em; max-width: 800px; margin: 0 auto;">
-                Passionate data analyst from Kolkata, India, currently mastering SQL, data visualization, 
-                and analytics fundamentals. Building a strong foundation in PostgreSQL, Excel, and Power BI 
-                through hands-on projects and continuous learning. Ready to contribute analytical insights 
+                Passionate data analyst from Kolkata, India, currently mastering SQL, data visualization,
+                and analytics fundamentals. Building a strong foundation in PostgreSQL, Excel, and Power BI
+                through hands-on projects and continuous learning. Ready to contribute analytical insights
                 to innovative teams.
             </p>
             <div style="text-align: center; margin-top: 30px;">
                 <a href="mailto:das.subhankar0352@gmail.com" class="btn">📧 Get In Touch</a>
-                <a href="www.linkedin.com/in/subhankar-das-01a1b6244" class="btn" style="margin-left: 15px;">💼 LinkedIn</a>
-                <a href="https://github.com/subhankar-das18" class="btn" style="margin-left: 10px;">⚒️ GitHub</a>
+                <a href="www.linkedin.com/in/subhankar-das-01a1b6244" class="btn" style="margin-left: 15px;">💼
+                    LinkedIn</a>
+                <a href="https://github.com/subhankar-das18" class="btn" style="margin-left: 10px;"> <img
+                        src="github_logo_icon_206752 (1).svg" alt="GitHub"
+                        style="width:20px; vertical-align:middle; margin-right:6px;"> GitHub</a>
             </div>
         </section>
 
@@ -229,15 +279,15 @@
             <div class="experience-item">
                 <div class="experience-date">2026 - Present</div>
                 <h3>Self-Driven Data Analytics Journey</h3>
-                <p>Daily hands-on practice with SQL queries, data visualization projects, 
-                   and portfolio development. Mastering advanced SQL functions and 
-                   industry-standard tools.</p>
+                <p>Daily hands-on practice with SQL queries, data visualization projects,
+                    and portfolio development. Mastering advanced SQL functions and
+                    industry-standard tools.</p>
             </div>
             <div class="experience-item">
                 <div class="experience-date">2025 - 2026</div>
                 <h3>SQL & Data Fundamentals</h3>
-                <p>Comprehensive learning of SQL JOIN operations, window functions, 
-                   Excel pivot tables, and data storytelling techniques.</p>
+                <p>Comprehensive learning of SQL JOIN operations, window functions,
+                    Excel pivot tables, and data storytelling techniques.</p>
             </div>
         </section>
 
@@ -245,7 +295,8 @@
             <h2>Featured Projects</h2>
             <div class="projects-grid">
                 <div class="project-item">
-                    <div style="background: linear-gradient(135deg, #667eea, #764ba2); height: 200px; border-radius: 10px; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.2em;">
+                    <div
+                        style="background: linear-gradient(135deg, #667eea, #764ba2); height: 200px; border-radius: 10px; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.2em;">
                         📚 Bookstore Dashboard
                     </div>
                     <h3>E-Commerce Profitability Analysis</h3>
@@ -253,7 +304,8 @@
                     <a href="#" class="btn">View Project →</a>
                 </div>
                 <div class="project-item">
-                    <div style="background: linear-gradient(135deg, #f093fb, #f5576c); height: 200px; border-radius: 10px; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.2em;">
+                    <div
+                        style="background: linear-gradient(135deg, #f093fb, #f5576c); height: 200px; border-radius: 10px; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.2em;">
                         🛒 Sales Performance
                     </div>
                     <h3>SaaS Revenue and Churn Analysis</h3>
@@ -261,7 +313,8 @@
                     <a href="#" class="btn">View Project →</a>
                 </div>
                 <div class="project-item">
-                    <div style="background: linear-gradient(135deg, #4facfe, #00f2fe); height: 200px; border-radius: 10px; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.2em;">
+                    <div
+                        style="background: linear-gradient(135deg, #4facfe, #00f2fe); height: 200px; border-radius: 10px; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.2em;">
                         💻 SQL Portfolio
                     </div>
                     <h3>Loan Default Risk Analysis</h3>
@@ -272,4 +325,5 @@
         </section>
     </div>
 </body>
+
 </html>
