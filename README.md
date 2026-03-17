@@ -1,7 +1,7 @@
 # Subhankar-portfolio-repo
 
 # 💫 About Me:
-    https://subhankar-das18.github.io/Subhankar-portfolio-repo/
+  ->  https://subhankar-das18.github.io/Subhankar-portfolio-repo/
 
 
 ## 🌐 Socials:
