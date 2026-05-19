@@ -1,7 +1,7 @@
 # Subhankar-portfolio-repo
 
 # 💫 About Me:
-  ->  https://subhankar-das18.github.io/Subhankar-portfolio-repo/
+  ->  [Subhankar Das – Data Analyst Portfolio](https://subhankar-das18.github.io/Subhankar-portfolio-repo/)
 
 
 ## 🌐 Socials:
