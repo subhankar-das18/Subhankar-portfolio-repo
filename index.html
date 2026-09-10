@@ -313,11 +313,11 @@
         }
 
         /* Right column: skills + experience */
-        .side-column {
-           display: grid;
-          grid-template-columns: 1fr 1fr;
-          gap: 16px;
-          align-items: start;
+      .side-column {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 16px;
+      align-items: start;
 }
 
         .card {
@@ -471,6 +471,7 @@
             display: grid;
             grid-template-columns: repeat(4, minmax(280px, 1fr));
             gap: 14px;
+            width: 100%;
         }
 
         .project-card {
